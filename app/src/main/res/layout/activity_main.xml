@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.demo.svslide.MainActivity">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/main_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.demo.svslide.view.BottomScrollView
+            android:id="@+id/main_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/main_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/vp_height">
+
+                </android.support.v4.view.ViewPager>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tv_height"
+                    android:gravity="center"
+                    android:background="@color/bg_tv"
+                    android:textColor="@color/text_color_white"
+                    android:text="@string/tv_text"/>
+                <ListView
+                    android:id="@+id/main_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/lv_height"
+                    android:divider="@color/colorPrimaryDark"
+                    android:dividerHeight="@dimen/lv_divider_height">
+                </ListView>
+            </LinearLayout>
+        </com.demo.svslide.view.BottomScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

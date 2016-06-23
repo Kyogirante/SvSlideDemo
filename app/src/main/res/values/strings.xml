@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SvSlideDemo</string>
+
+    <string name="tv_text">This is a TextView</string>
+</resources>
